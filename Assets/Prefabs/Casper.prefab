@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   units: []
+  cam: {fileID: 8122888101897123184}
 --- !u!114 &4497508821109125305
 MonoBehaviour:
   m_ObjectHideFlags: 0

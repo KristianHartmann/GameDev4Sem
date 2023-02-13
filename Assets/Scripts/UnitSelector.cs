@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class UnitSelector : MonoBehaviour
 {
     public List<GameObject> units;
+    public Camera cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class UnitSelector : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit))
             {
@@ -44,7 +45,7 @@ public class UnitSelector : MonoBehaviour
         }
         if(Input.GetMouseButtonDown(1))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit))
             {
