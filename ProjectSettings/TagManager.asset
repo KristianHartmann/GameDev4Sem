@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - BuildingSample
+  - Enemy
+  - slider
   layers:
   - Default
   - TransparentFX

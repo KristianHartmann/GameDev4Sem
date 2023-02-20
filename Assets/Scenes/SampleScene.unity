@@ -130,6 +130,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 380160191447694211, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861009657013298624, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939501716344494533, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196130294882987259, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851706398487562319, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271274711323835311, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489529661623774662, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180939947517449242, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3894830290880274909, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
       propertyPath: m_Name
       value: Frederik
@@ -177,6 +209,22 @@ PrefabInstance:
     - target: {fileID: 3894830290880274910, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725119574159693, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918589273800509223, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7926859889598012606, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: startingHealth
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852147600765744201, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19ac889fe38368042bf4da5d3df5fcf1, type: 3}
