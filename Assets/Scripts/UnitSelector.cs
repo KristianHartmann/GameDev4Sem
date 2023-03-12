@@ -15,13 +15,15 @@ public class UnitSelector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if(Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit))
             {
-                if(hit.collider.tag == "Player")
+                if(hit.collider.CompareTag("Player") || hit.collider.CompareTag("Worker"))
                 {
                     if(!units.Contains(hit.collider.gameObject))
                     {
@@ -38,23 +40,8 @@ public class UnitSelector : MonoBehaviour
                     }
                 }
                 Debug.Log(hit.collider.gameObject.name);
-                if(hit.collider.tag == "Ground"){
+                if(hit.collider.CompareTag("Ground")){
                     units.Clear();
-                }
-            }
-        }
-        if(Input.GetMouseButtonDown(1))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if(Physics.Raycast(ray, out hit))
-            {
-                if(hit.collider.tag == "Ground")
-                {
-                    foreach(GameObject unit in units)
-                    {
-                        unit.GetComponent<NavMeshAgent>().SetDestination(hit.point);
-                    }
                 }
             }
         }

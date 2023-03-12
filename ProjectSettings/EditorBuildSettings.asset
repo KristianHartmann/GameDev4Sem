@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PuaseMenu.unity
+    guid: 1d63042f0818a0447b7611a28adbf223
+  - enabled: 1
+    path: Assets/Scenes/CasperScene.unity
+    guid: b59c510ae21779941bd65f3f1d910766
   m_configObjects: {}
