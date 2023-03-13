@@ -37,7 +37,7 @@ public class UnitSelector : MonoBehaviour
                         
                     }
                 }
-                Debug.Log(hit.collider.gameObject.name);
+                // Debug.Log(hit.collider.gameObject.name);
                 if(hit.collider.tag == "Ground"){
                     units.Clear();
                 }
