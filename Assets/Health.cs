@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
 {
     
     private int currentHealth = 100; 
-    private int maxhealth = 100; 
+    // private int maxhealth = 100; 
 
     private bool isDead = false;
 

@@ -36,7 +36,7 @@ public class BuildingSpawner : MonoBehaviour
             {
                 // Spawn the player at the hit point
                 Instantiate(unit, hit.point, Quaternion.identity);
-                Debug.Log("Spawned player at " + hit.point);
+                Debug.Log("Spawned unit at " + hit.point);
                 Debug.Log("Spawn queue size: " + unitSpawnQueue.Count);
             }
 
@@ -60,7 +60,7 @@ public class BuildingSpawner : MonoBehaviour
 
                 // Add the spawn position to the queue
                 unitSpawnQueue.Enqueue(transform.position + spawnOffset);
-                Debug.Log("Added player to the queue. Spawn queue size: " + unitSpawnQueue.Count);
+                Debug.Log("Added unit to the queue. Spawn queue size: " + unitSpawnQueue.Count);
 
                 // If the shift key is held down, add 4 more units to the queue
                 if (shiftHeld)
@@ -73,7 +73,7 @@ public class BuildingSpawner : MonoBehaviour
                         // Add the spawn position to the queue
                         unitSpawnQueue.Enqueue(transform.position + shiftSpawnOffset);
                     }
-                    Debug.Log("Added 5 players to the queue. Spawn queue size: " + unitSpawnQueue.Count);
+                    Debug.Log("Added 5 unit to the queue. Spawn queue size: " + unitSpawnQueue.Count);
 
                 }
             }
@@ -87,7 +87,7 @@ public class BuildingSpawner : MonoBehaviour
                     {
                         unitSpawnQueue.Dequeue();
                     }
-                    Debug.Log("Removed 5 from the queue. Spawn queue size: " + unitSpawnQueue.Count);
+                    Debug.Log("Removed 5 units from the queue. Spawn queue size: " + unitSpawnQueue.Count);
 
                 }
                 else
@@ -96,7 +96,7 @@ public class BuildingSpawner : MonoBehaviour
                     if (unitSpawnQueue.Count > 0)
                     {
                         unitSpawnQueue.Dequeue();
-                        Debug.Log("Removed 1 from the queue. Spawn queue size: " + unitSpawnQueue.Count);
+                        Debug.Log("Removed 1 unit from the queue. Spawn queue size: " + unitSpawnQueue.Count);
                     }
                 }
             }

@@ -9,8 +9,8 @@ public class UnitClick : MonoBehaviour
 
     public LayerMask clickable;
     public LayerMask ground;
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,15 +34,16 @@ public class UnitClick : MonoBehaviour
                 else
                 {
                     UnitSelections.Instance.ClickSelect(hit.collider.gameObject);
+                    Debug.Log("Clicked on " + hit.collider.gameObject.name);
                 }
             }
             else
             {
                 if (!Input.GetKey(KeyCode.LeftShift))
                 {
-                    UnitSelections.Instance.DeselectAll();    
+                    UnitSelections.Instance.DeselectAll();
                 }
-                
+
             }
         }
     }
